@@ -14,10 +14,10 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="img/icon.png">
-  <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -26,6 +26,51 @@
   <div class="centered">
     <img src="img/logo-boxdev.png" alt="Logo BoxDev" class="logo-boxdev" />
     <p class="text">Sua software boutique</p>
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+      window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+      formbutton("create", {
+        title: "Contato com a Box Dev",
+        fields: [{
+          name: "name",
+          type: "text",
+          label: "Nome",
+          required: true,
+        },
+        {
+          name: "email",
+          type: "email",
+          label: "E-mail",
+          required: true
+        },
+        {
+          name: "phone",
+          type: "text",
+          label: "Telefone",
+          required: true
+        },
+        {
+          name: "Mensagem",
+          type: "textarea"
+        },
+        {
+          type: "submit"
+        }],
+        styles: {
+          fontFamily:'"Roboto", sans-serif',
+          button: {
+            background: "#6A0DAD"
+          },
+          title: {
+            background: "#6A0DAD",
+            letterSpacing: "0.05em",
+            textTransform: "uppercase"
+          }
+        },
+        buttonImg: "<i class='fas fa-comment' style='font-size:24px'/>",
+        action: "https://formspree.io/f/xjvpjlae" 
+      })
+    </script>
   </div>
 </body>
 
