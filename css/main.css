@@ -261,3 +261,27 @@ textarea {
   }
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.content {
+  margin: auto;
+}
+
+.logo-boxdev {
+  width: 500px;
+  height: 230px;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: x-large;
+  color: #6A0DAD;
+}
